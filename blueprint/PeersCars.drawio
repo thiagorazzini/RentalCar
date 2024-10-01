@@ -49,58 +49,181 @@
     </mxGraphModel>
   </diagram>
   <diagram id="XeDgflxLHlmJHXv4LY90" name="CRUD Usuario">
-    <mxGraphModel dx="2446" dy="1996" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="6629" dy="2841" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="K-7Dy93phO_eg-h3hWWZ-1" value="&lt;font size=&quot;1&quot; style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 21px;&quot;&gt;Cadastro cliente&lt;/b&gt;&lt;/font&gt;&lt;div&gt;- O cliente entra no site clica em cadastrar e preenche os fómulários de cadastro&lt;/div&gt;&lt;div&gt;- Formulario de cadastro&amp;nbsp; deve conter: Nome completo, nacionalidade(se for br pode colocar CPF ou passaporte e se for estrangeiro somente passaporte), gênero, telefone com ddi ddd e numero, email, confirmação de celular e confirmação de email. senha forte e confirmação de senha.&lt;/div&gt;&lt;div&gt;- após o cadastro o cliente será redirecionado para a pagina de completar dados bem como data de nascimento e dados da cnh&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-          <mxGeometry x="-870" y="-340" width="430" height="430" as="geometry" />
+        <mxCell id="G_sEXodluY_n3oO2Qa2U-40" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-2480" y="-874" width="1640" height="580" as="geometry" />
         </mxCell>
-        <mxCell id="K-7Dy93phO_eg-h3hWWZ-2" value="&lt;div&gt;Core:&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp;- Microsserviços&lt;/div&gt;&lt;div&gt;&amp;nbsp;- Entity framework e Dapper&lt;/div&gt;&lt;div&gt;&amp;nbsp;- MongoDb e SQL Server&lt;/div&gt;&lt;div&gt;&amp;nbsp;- Padõres e arquiteturas: CQRS, Arquitetura limpa, Padrão Repository&lt;/div&gt;&lt;div&gt;&amp;nbsp;- Fluent validation&lt;/div&gt;&lt;div&gt;&amp;nbsp;- xUnit: NSubstitute e Bogus&lt;/div&gt;&lt;div&gt;&amp;nbsp;- JWT&lt;/div&gt;&lt;div&gt;&amp;nbsp;- Azure Service bus (Filas)&lt;/div&gt;&lt;div&gt;&amp;nbsp;- OCELOT Api Gateway&lt;/div&gt;&lt;div&gt;&amp;nbsp;- Consul service&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="-815" y="-690" width="320" height="270" as="geometry" />
-        </mxCell>
-        <mxCell id="R61KHlT57wEKPgx_LiH2-5" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;User&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;-&amp;nbsp; Id:Guid&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- FullName: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Nationality: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- DocumentType: DocumentTpeEnum&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Gender: GenderEnum&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Celphone: string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- password: string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Status: Enum&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Void SetPassword():&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Void ChangePassword()&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ bool VerifyPassword():&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Void UpdateProfile():&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Void SetProfilePicture():&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Void SetActiveStatus():&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Void SetRole():&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="-50" y="-340" width="220" height="270" as="geometry" />
-        </mxCell>
-        <mxCell id="e9Z67TnMGRZXzncIXulN-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="R61KHlT57wEKPgx_LiH2-10" target="R61KHlT57wEKPgx_LiH2-5">
+        <mxCell id="G_sEXodluY_n3oO2Qa2U-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="R61KHlT57wEKPgx_LiH2-5" target="e9Z67TnMGRZXzncIXulN-11">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="R61KHlT57wEKPgx_LiH2-10" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;DocumentTypeEnum&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;- Cpf = 0&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;- Passport = 1&lt;/b&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="-330" y="-300" width="140" height="60" as="geometry" />
+        <mxCell id="G_sEXodluY_n3oO2Qa2U-12" value="*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=18;" vertex="1" connectable="0" parent="G_sEXodluY_n3oO2Qa2U-11">
+          <mxGeometry x="-0.8727" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="R61KHlT57wEKPgx_LiH2-13" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;GenderEnum&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;- Male= 0&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;- Female= 1&amp;nbsp;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;- Other = 2&lt;/b&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="-330" y="-230" width="140" height="80" as="geometry" />
+        <mxCell id="G_sEXodluY_n3oO2Qa2U-13" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=18;" vertex="1" connectable="0" parent="G_sEXodluY_n3oO2Qa2U-11">
+          <mxGeometry x="0.7316" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="e9Z67TnMGRZXzncIXulN-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.01;entryY=0.3;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="R61KHlT57wEKPgx_LiH2-13" target="R61KHlT57wEKPgx_LiH2-5">
+        <mxCell id="R61KHlT57wEKPgx_LiH2-5" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;User&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;-&amp;nbsp; Id:Guid&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- FullName: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Nationality: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- DocumentType: DocumentTpeEnum&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Document: String&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Gender: GenderEnum&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- BirthDate: DateTime&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Celphone: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Password: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Status: Enum&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Email: String&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Void SetPassword():&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Void ChangePassword()&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ bool VerifyPassword():&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Void UpdateProfile():&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Void SetProfilePicture():&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Void SetActiveStatus():&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Void SetRole():&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="-2465" y="-854" width="220" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="G_sEXodluY_n3oO2Qa2U-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="e9Z67TnMGRZXzncIXulN-11" target="G_sEXodluY_n3oO2Qa2U-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e9Z67TnMGRZXzncIXulN-4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;StatusEnum&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;- Active= 0&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;- Deleted= 1&amp;nbsp;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="-330" y="-130" width="140" height="60" as="geometry" />
+        <mxCell id="G_sEXodluY_n3oO2Qa2U-22" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=18;" vertex="1" connectable="0" parent="G_sEXodluY_n3oO2Qa2U-21">
+          <mxGeometry x="-0.8195" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="e9Z67TnMGRZXzncIXulN-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.033;entryY=0.444;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="e9Z67TnMGRZXzncIXulN-4" target="R61KHlT57wEKPgx_LiH2-5">
+        <mxCell id="G_sEXodluY_n3oO2Qa2U-23" value="*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=18;" vertex="1" connectable="0" parent="G_sEXodluY_n3oO2Qa2U-21">
+          <mxGeometry x="0.8941" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_sEXodluY_n3oO2Qa2U-26" value="PickupLocation" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="G_sEXodluY_n3oO2Qa2U-21">
+          <mxGeometry x="-0.1349" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_sEXodluY_n3oO2Qa2U-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="e9Z67TnMGRZXzncIXulN-11" target="G_sEXodluY_n3oO2Qa2U-1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="-120" y="-100" />
-              <mxPoint x="-120" y="-180" />
-              <mxPoint x="-60" y="-180" />
-              <mxPoint x="-60" y="-220" />
+              <mxPoint x="-2085" y="-564" />
+              <mxPoint x="-2085" y="-474" />
+              <mxPoint x="-2030" y="-474" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="e9Z67TnMGRZXzncIXulN-11" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Rental&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Id: Guid&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- RentalDate: DateTime&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- ReturnDate: DateTime&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- RentalStatus: StatusEnum&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- UserId: Guid&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- CarId: Guid&lt;/p&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Void StartRental():&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Void EndRental():&lt;br&gt;+ Void CancelRenta():&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="250" y="-340" width="220" height="270" as="geometry" />
+        <mxCell id="G_sEXodluY_n3oO2Qa2U-44" value="*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=18;" vertex="1" connectable="0" parent="G_sEXodluY_n3oO2Qa2U-42">
+          <mxGeometry x="0.8" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="e9Z67TnMGRZXzncIXulN-12" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Car&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Id: Guid&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- LicensePlate: String&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Status: CarStatusEnum&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Color: String&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Chassis: String&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- EngineNumber: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Renavan: Int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Status: CarStatusEnum&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Milage: Int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- ModelId:Guid&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- ManufacturerId: Guid&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- CategoryId: Guid&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Void SetAvailable():&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Void SetRented():&lt;br&gt;+ Void SetMaintenance():&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="520" y="-340" width="220" height="270" as="geometry" />
+        <mxCell id="e9Z67TnMGRZXzncIXulN-11" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Rental&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Id: Guid&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- RentalDate: DateTime&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- ExpectedReturnDate: DateTime&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;- ReturnDate: DateTime&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Status: StatusEnum&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- TotalCost: Decimal&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- UserId: Guid&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- CarId: Guid&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- CategoryId: Guid&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- PickupLocationId: Guid&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;-&amp;nbsp;DropOffLocationId: Guid&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Void StartRental():&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Void EndRental():&lt;br&gt;+ Void CancelRenta():&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="-2135" y="-834" width="220" height="270" as="geometry" />
         </mxCell>
-        <mxCell id="e9Z67TnMGRZXzncIXulN-13" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Id: Guid&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Name: String&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="250" y="-550" width="220" height="60" as="geometry" />
+        <mxCell id="G_sEXodluY_n3oO2Qa2U-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="e9Z67TnMGRZXzncIXulN-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1575" y="-564" as="sourcePoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="e9Z67TnMGRZXzncIXulN-14" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Model&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Id: Guid&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Name: String&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Year: Date&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Transmition: TransmitionEnum&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Engine: String&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- CarTypeEnum: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- ManufacturerId: Guid&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- CategoryId: CarStatusEnum&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="510" y="-630" width="220" height="150" as="geometry" />
+        <mxCell id="G_sEXodluY_n3oO2Qa2U-32" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=18;" vertex="1" connectable="0" parent="G_sEXodluY_n3oO2Qa2U-2">
+          <mxGeometry x="-0.9304" y="4" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="e9Z67TnMGRZXzncIXulN-15" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Category&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Id: Guid&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Name: String&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- DailyPrice: Decimal&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="-20" y="-560" width="220" height="80" as="geometry" />
+        <mxCell id="G_sEXodluY_n3oO2Qa2U-33" value="*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=18;" vertex="1" connectable="0" parent="G_sEXodluY_n3oO2Qa2U-2">
+          <mxGeometry x="0.8789" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_sEXodluY_n3oO2Qa2U-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="e9Z67TnMGRZXzncIXulN-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1575" y="-699" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="-1485" y="-699" />
+              <mxPoint x="-1485" y="-699" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_sEXodluY_n3oO2Qa2U-30" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=18;" vertex="1" connectable="0" parent="G_sEXodluY_n3oO2Qa2U-3">
+          <mxGeometry x="-0.9107" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_sEXodluY_n3oO2Qa2U-31" value="*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=18;" vertex="1" connectable="0" parent="G_sEXodluY_n3oO2Qa2U-3">
+          <mxGeometry x="0.6369" y="-1" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_sEXodluY_n3oO2Qa2U-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="e9Z67TnMGRZXzncIXulN-12" target="e9Z67TnMGRZXzncIXulN-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-1685" y="-809" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_sEXodluY_n3oO2Qa2U-34" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=18;" vertex="1" connectable="0" parent="G_sEXodluY_n3oO2Qa2U-4">
+          <mxGeometry x="-0.9006" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_sEXodluY_n3oO2Qa2U-35" value="*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=18;" vertex="1" connectable="0" parent="G_sEXodluY_n3oO2Qa2U-4">
+          <mxGeometry x="0.8168" y="-3" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9Z67TnMGRZXzncIXulN-12" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Car&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Id: Guid&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- LicensePlate: String&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Status: CarStatusEnum&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Color: String&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Chassis: String&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- EngineNumber: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Renavan: Int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Status: CarStatusEnum&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Milage: Int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- ModelId:Guid&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- ManufacturerId: Guid&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- CategoryId: Guid&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Void SetAvailable():&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Void SetRented():&lt;br&gt;+ Void SetMaintenance():&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="-1795" y="-699" width="220" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="e9Z67TnMGRZXzncIXulN-13" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Id: Guid&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Name: String&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="-1335" y="-729" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G_sEXodluY_n3oO2Qa2U-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="e9Z67TnMGRZXzncIXulN-14" target="e9Z67TnMGRZXzncIXulN-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-1055" y="-424" />
+              <mxPoint x="-1055" y="-809" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_sEXodluY_n3oO2Qa2U-9" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=18;" vertex="1" connectable="0" parent="G_sEXodluY_n3oO2Qa2U-8">
+          <mxGeometry x="-0.9173" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_sEXodluY_n3oO2Qa2U-10" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=18;" vertex="1" connectable="0" parent="G_sEXodluY_n3oO2Qa2U-8">
+          <mxGeometry x="0.8864" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9Z67TnMGRZXzncIXulN-14" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Model&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Id: Guid&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Name: String&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Year: Date&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Transmition: TransmitionEnum&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Engine: String&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- CarTypeEnum: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- ManufacturerId: Guid&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- CategoryId: Guid&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="-1325" y="-499" width="220" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="e9Z67TnMGRZXzncIXulN-15" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Category&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Id: Guid&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Name: String&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- DailyPrice: Decimal&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="-1335" y="-849" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="G_sEXodluY_n3oO2Qa2U-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Location&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Id: Guid&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Name: String&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- FullAdress: String&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-2085" y="-439" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="G_sEXodluY_n3oO2Qa2U-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.55;entryY=0.957;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="e9Z67TnMGRZXzncIXulN-14" target="e9Z67TnMGRZXzncIXulN-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-1214" y="-569" />
+              <mxPoint x="-1214" y="-569" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_sEXodluY_n3oO2Qa2U-6" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=18;" vertex="1" connectable="0" parent="G_sEXodluY_n3oO2Qa2U-5">
+          <mxGeometry x="-0.6924" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_sEXodluY_n3oO2Qa2U-7" value="*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=18;" vertex="1" connectable="0" parent="G_sEXodluY_n3oO2Qa2U-5">
+          <mxGeometry x="0.7155" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_sEXodluY_n3oO2Qa2U-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.01;entryY=0.42;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="e9Z67TnMGRZXzncIXulN-11" target="e9Z67TnMGRZXzncIXulN-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G_sEXodluY_n3oO2Qa2U-15" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=18;" vertex="1" connectable="0" parent="G_sEXodluY_n3oO2Qa2U-14">
+          <mxGeometry x="-0.9213" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_sEXodluY_n3oO2Qa2U-16" value="*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=18;" vertex="1" connectable="0" parent="G_sEXodluY_n3oO2Qa2U-14">
+          <mxGeometry x="0.8517" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_sEXodluY_n3oO2Qa2U-43" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=18;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="-2085" y="-544" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
