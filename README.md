@@ -10,7 +10,7 @@ Core:
  - Fluent validation
  - xUnit: NSubstitute e Bogus
  - JWT
- - Azure Service bus (Filas)
+ - RabbitMQ
  - OCELOT Api Gateway
  - Consul service
 
